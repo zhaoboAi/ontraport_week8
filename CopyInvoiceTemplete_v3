@@ -1,0 +1,105 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://ontraport.com/"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='sod-drawer-handle']//div[.='LOGIN']"
+      }
+    },
+    {
+      "type": "switchToDefaultContent"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='content']/div/div[1]/div/div/div/div/form/fieldset/input[1]"
+      },
+      "text": "tester"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='content']/div/div[1]/div/div/div/div/form/fieldset/input[2]"
+      },
+      "text": "passphrases are easy to break"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='log_form']/form/input"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "2000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "tester@sendpepper.com"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Account"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='ussr-settings']/div[1]/div[2]/ul/li[2]/a/div[1]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "ontraport_panel_action_new"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='ussr-component-section-components']/div/div[2]/div[2]/div/div/input"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//ul[@class='ussr-component-drilldownselect-ul']//div[.='Slayman Makes an Invoice']"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='ussr-component-location-editor-editor-header']/div[1]/div/div/input"
+      },
+      "text": "copy from mail template"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='ussr-chrome-panel-pane']//button[normalize-space(.)='Preview']"
+      }
+    }
+  ]
+}

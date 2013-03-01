@@ -1,0 +1,151 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://ontraport.com/"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='sod-drawer-handle']//div[.='LOGIN']"
+      }
+    },
+    {
+      "type": "switchToDefaultContent"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='content']/div/div[1]/div/div/div/div/form/fieldset/input[1]"
+      },
+      "text": "tester"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='content']/div/div[1]/div/div/div/div/form/fieldset/input[2]"
+      },
+      "text": "passphrases are easy to break"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='log_form']/form/input"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "2000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "tester@sendpepper.com"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Ontraport Details"
+      }
+    },
+    {
+      "type": "waitForTextPresent",
+      "text": "INVOICES"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='ussr-chrome-panel-pane']//div[.='(Add/Change Card on file)']"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "firstname"
+      },
+      "text": "my"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "lastname"
+      },
+      "text": "test"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "address"
+      },
+      "text": "123,state street"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "city"
+      },
+      "text": "Goleta"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='personal_section']/div[6]/div[2]/input"
+      },
+      "text": "xxxxx"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='personal_section']/div[7]/div[2]/input"
+      },
+      "text": "U.S.A"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='op_package_cc']/div[3]/div[2]/input"
+      },
+      "text": "XXXXXXXX"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='op_package_cc']//option[.='Sep']"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='op_package_cc']/div[5]/div[2]/input"
+      },
+      "text": "XXX"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='ussr-dialog-buttons']//button[.='Save']"
+      }
+    }
+  ]
+}

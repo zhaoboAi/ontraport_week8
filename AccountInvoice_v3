@@ -1,0 +1,88 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://ontraport.com/"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='sod-drawer-handle']//div[.='LOGIN']"
+      }
+    },
+    {
+      "type": "switchToDefaultContent"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='content']/div/div[1]/div/div/div/div/form/fieldset/input[1]"
+      },
+      "text": "tester"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='content']/div/div[1]/div/div/div/div/form/fieldset/input[2]"
+      },
+      "text": "passphrases are easy to break"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='log_form']/form/input"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "2000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "tester@sendpepper.com"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Ontraport Details"
+      }
+    },
+    {
+      "type": "waitForTextPresent",
+      "text": "INVOICES"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='invoice_years']//div[.='2011']"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Jul 30, 2011"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='invoice_years']//div[.='2010']"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Jul 30, 2010"
+    }
+  ]
+}

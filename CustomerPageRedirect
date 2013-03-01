@@ -1,0 +1,106 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://app.ontraport.com/"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "username"
+      },
+      "text": "zhaobo.ai.ece@gmail.com"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "password"
+      },
+      "text": "test123"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "login_button"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//aside[@id='ussr-chrome-sidebar']//span[.='Sites']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "ontraport_panel_action_new"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='ussr-component-section-components']/div/div[4]/a/button"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div[1]/div[1]/input[2]"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div[1]/div[2]/div/div/div/input"
+      },
+      "text": "www.google.com"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div[2]/div/div/input"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//ul[@class='ussr-component-drilldownselect-ul']//span[normalize-space(.)='Enter a custom URL']"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div[2]/div/div/div/div[1]/div[3]/div/div/div/div[1]/div/div/input"
+      },
+      "text": "www.facebook.com"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='ussr-chrome-panel-pane']//span[.='Select']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='ussr-chrome-panel-pane']//button[normalize-space(.)='Save']"
+      }
+    }
+  ]
+}

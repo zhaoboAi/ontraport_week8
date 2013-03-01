@@ -1,0 +1,147 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://app.ontraport.com/"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "username"
+      },
+      "text": "zhaobo.ai.ece@gmail.com"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "password"
+      },
+      "text": "test123"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "login_button"
+      }
+    },
+    {
+      "type": "get",
+      "url": "http://app.ontraport.com/#!/contact/settings"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='ussr-section']/ul/li[2]/a/div[1]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "csvtoimport2-different.csv"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='ussr-chrome-panel-pane']//button[normalize-space(.)='Next: Import Settings']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='ussr-merge-options']/div[5]/div/div/a/span[1]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='ussr-chrome-panel-pane']//button[normalize-space(.)='Next: Import Settings']"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "ERROR"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='ussr-dialog-buttons']//button[.='Close']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='ussr-merge-options']/div[6]/div/div/a/span[1]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='ussr-merge-options']/div[7]/div/div/a/span[1]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='ussr-merge-options']/div[8]/div/div/a/span[1]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='ussr-chrome-panel-pane']//button[normalize-space(.)='Next: Import Settings']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='ussr-chrome-panel-pane']//button[normalize-space(.)='Next: Add Rules']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='ussr-chrome-panel-pane']//button[normalize-space(.)='Back']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='ussr-chrome-panel-pane']//button[normalize-space(.)='Next: Add Rules']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='ussr-chrome-panel-pane']//button[normalize-space(.)='Finish']"
+      }
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//td[@class='ussr-collection-empty']/div"
+      }
+    }
+  ]
+}

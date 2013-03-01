@@ -1,0 +1,7 @@
+CustomerPageRedirect: there is no space for naming the Redirect, and the Redirect sames cannot be saved and shows on the landing page list
+
+LoadingPageWithVideo: cannot updating video to the website, so no video option when click new item->video.
+
+For selecting a domain for loadingpage, as part of the page cannot be seen without rolling the mouse, selenium builder cannot interact with that elements.
+
+ImportContractWrong: It seems the function of importing contract does not finish yet

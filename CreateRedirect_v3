@@ -1,0 +1,71 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Sites"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "ontraport_panel_action_new"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='ussr-component-section-components']/div/div[4]/a/button"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div[1]/div[2]/div/div/div/div[1]/div/div/input"
+      },
+      "text": "meatball"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div[1]/div[2]/div/div/div/div[3]/div/div/input"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='ussr-chrome-panel-pane']//div[.='respond.ontraport.net']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div[2]/div/div/input"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//ul[@class='ussr-component-drilldownselect-ul']//div[.='Slayman Test Page']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='ussr-chrome-panel-pane']//button[normalize-space(.)='Save']"
+      }
+    }
+  ]
+}
